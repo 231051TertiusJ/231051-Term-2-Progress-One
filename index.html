@@ -18,19 +18,19 @@
 <body>
 
     <nav>
-        <h5>ClosedDoor University</h5>
-        <h6>Home</h6>
-        <h6>Prospectus</h6>
-        <h4>Academic Calendar</h4>
-        <select placeholder="Dropdown">
+        <h5 class="right white">ClosedDoor University</h5>
+        <h6 class="right white">Home</h6>
+        <h6 class="right light">Prospectus</h6>
+        <h6 class="right light">Academic Calendar</h6>
+        <select class="right dropdown">
+            <option>Dropdown</option>
             <option>UX Design</option>
             <option>Development</option>
             <option>Product Design</option>
-            <br>
             <option>Creative Computing</option>
         </select>
-        <input type="text" class="search bar" placeholder="Search...">
-        <button class="search buttonsr">Search</button>
+        <button class="search-button">Search</button>
+        <input type="text" class="search-bar" placeholder="Search...">
     </nav>
 
     <header>
@@ -38,58 +38,72 @@
         <h5>Marvel at this generic text! Put some text here, anything you want as long as its not Lorum Impsum</h5>
         <hr>
         <p><strong>Take a look at the some of our subject offerings by clicking the buttons below!</strong></p>
-        <button>UX Design</button>
-        <button>Development</button>
-        <button>Product Design</button>
+        <button class="headbut-XD">UX Design</button>
+        <button class="headbut-DV">Development</button>
+        <button class="headbut-ID">Product Design</button>
 
     </header>
 
     <div>
         <div class="container">
             <div class="row">
-                <div class="col-4 uxdesign">
+                <div class="col-3 uxdesign">
                     <div class="image uximage"></div>
                     <h4>UX Design</h4>
                     <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <button class="headbut-XD">Read Me</button>
+                    <br>
                 </div>
-                <div class="col-4 development">
+                <div class="col-3 development">
                     <div class="image dvimage"></div>
                     <h4>Development</h4>
                     <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <button class="headbut-DV">Read Me</button>
+                    <br>
                 </div>
-                <div class="col-4 product">
+                <div class="col-3 product">
                     <div class="image idimage"></div>
                     <h4>Product Design</h4>
                     <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <button class="headbut-ID">Read Me</button>
+                    <br>
                 </div>
             </div>
         </div>
     </div>
 
-    <div>
+    <div class="bottem">
         <div class="container">
             <div class="row">
                 <div class="col-6 signup">
                     <h4>Sign Up</h4>
                     <p>If you would like to register for one of our courses, use the form below</p>
-                    <input type="text" class="form-control" placeholder="Name & Surname" id="" >
-                    <input type="email" class="form-control" placeholder="Enter Email" id="" >
-                    <input type="number" class="form-control" placeholder="Contact Number" id="" >
-                    <select class="form-control" id="" >
+                    <input type="text" class="form-control" placeholder="Name & Surname" id="first" required>
+                    <input type="email" class="form-control" placeholder="Enter Email" id="email" required>
+                    <input type="number" class="form-control" placeholder="Contact Number" id="number" required>
+                    <select class="form-control" id="subject" required>
                         <option>Select A Subject</option>
-                        <option></option>
-                        <option></option>
-                        <option></option>
+                        <option>UX Design</option>
+                        <option>Development</option>
+                        <option>Product Design</option>
                         
                     </select>
-                    <input type="password" class="form-control" placeholder="Password" id="" >
-                    <div></div>
-                    <button>Register Account</button>
+                    <input type="password" class="form-control" placeholder="Password" id="password" required>
+                    <div>
+                        <div class="top-check">
+                            <input class="form-check-input" name="checkbox" type="checkbox" id="check" required>
+                            <label class="form-check-label">
+                              Send Me Spam Newsletters
+                            </label>
+                        </div>
+                    </div>
+                    <button class="headbut-XD" id="">Register Account</button>
+                    
                 </div>
                 <div class="col-6 gallery">
                     <h4>Our Gallery</h4>
                     <p>Take a look at some of our cool shit!</p>
-                    <div class="image ourgally"></div>
+                    <div class="image2 ourgally"></div>
                 </div>
             </div>
         </div>
